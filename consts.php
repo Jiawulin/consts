@@ -14,6 +14,8 @@ define('MTIME', 		microtime(true));
 //目录分隔符
 define('DS',			DIRECTORY_SEPARATOR);
 
+//是否是AJAX请求
+define('IS_AJAX',       isset($_SERVER['HTTP_X_REQUESTED_WITH']) && $_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest' );
 
 
 ?>
